@@ -1,17 +1,17 @@
 # Aerial Cinematic SDDM (Qt6/Plasma 6 Port)
 
-A minimalist, cinematic SDDM login theme designed specifically for KDE Neon Testing / Plasma 6. This theme features a high-definition video background that seamlessly transitions into a "Cinematic Mode"—fading out UI elements during inactivity to let the background video shine.
+A minimalist, cinematic SDDM login theme designed specifically for KDE Neon Testing / Plasma 6. This theme features a high-definition video background that seamlessly transitions into a "Cinematic Mode"—fading out UI elements during inactivity to let the background video play.
 
 ## Preview
 The demo background is from here https://motionbgs.com/snowfall-in-forest
 ![Aerial Cinematic Preview](screens/preview.gif)
 
-> **The Cinematic Effect:** After 10 seconds of inactivity, the clock, login fields, and session picker will automatically fade out, and the background dimming will lift to reveal the crystal-clear video. Simply move your mouse or start typing to bring the interface back.
+> **The Cinematic Effect:** After 10 seconds of inactivity login fields and session picker will automatically fade out, and the background dimming will lift to reveal the clear video. Move your mouse or start typing to bring the interface back.
 
 ---
 
 ##  Features
-* **Qt6 & Plasma 6 Native**: Fully refactored to remove legacy Qt5 dependencies and versioned imports.
+* **Qt6 & Plasma 6 Native**: Quickly refactored to remove legacy Qt5 dependencies and versioned imports.
 
 
 ---
