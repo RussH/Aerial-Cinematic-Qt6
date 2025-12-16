@@ -3,24 +3,20 @@ import QtQuick.Controls
 import SddmComponents
 import QtMultimedia
 
-import "components"
-
 Rectangle {
     id: container
     width: 1600
     height: 900
     color: "black"
 
-    TextConstants { id: textConstants }
-
-    // Virtual Keyboard Suppression
+    // Virtual Keyboard Suppression for T480s touchscreen
     Item { id: inputPanel; visible: false; enabled: false; property bool active: false }
 
     readonly property int targetSession: (typeof session !== 'undefined') ? session.index : 0
     FontLoader { id: textFont; source: config.displayFont.indexOf("/") !== -1 ? Qt.resolvedUrl(config.displayFont) : "" }
     readonly property string mainFontFamily: (config.displayFont.indexOf("/") !== -1) ? textFont.name : config.displayFont
 
-    // --- INACTIVITY LOGIC ---
+    // --- INACTIVITY LOGIC (Cinematic Fade) ---
     Timer {
         id: uiDelayTimer
         interval: config.fadeDuration
@@ -120,7 +116,7 @@ Rectangle {
         }
     }
 
-    // --- SESSION SELECTION (Horizontal List Version) ---
+    // --- SESSION SELECTION (Horizontal Pill Version) ---
     Row {
         id: session_row_container
         anchors.bottom: parent.bottom; anchors.left: parent.left; anchors.margins: 40
@@ -141,7 +137,7 @@ Rectangle {
                 Text {
                     id: session_label
                     anchors.centerIn: parent
-                    text: model.name || "Session " + index // Fallback text
+                    text: model.name || "Session " + index
                     color: "white"; font.pointSize: 9; font.bold: index === session_repeater.currentIndex
                 }
 
@@ -153,7 +149,7 @@ Rectangle {
         }
     }
 
-    // Power Buttons
+    // Power Buttons (Unicode Symbols)
     Row {
         id: power_buttons
         anchors.bottom: parent.bottom; anchors.right: parent.right; anchors.margins: 40
