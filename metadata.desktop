@@ -1,16 +1,14 @@
 [SddmGreeterTheme]
-Name=Aerial HD Video
-Description=Aerial HD Video Stream
-Author=Fabio Almeida
-Copyright=(c) 2016, Fabio Almeida
-License=CC-BY-SA
+Name=Aerial Cinematic Qt6
+Description=Cinematic local video background with inactivity fade (Qt6 Port).
+Author=Russh (Original by Fabio Almeida)
+Copyright=(c) 2024, Russh
+License=GPL
 Type=sddm-theme
-Version=0.1
-Website=https://github.com/3ximus/aerial-sddm-theme
-Screenshot=screens/screenshot.png
+Version=1.0
+Website=https://github.com/YOUR_USERNAME/aerial-sddm-qt6
+Screenshot=screens/preview.gif
 MainScript=Main.qml
 ConfigFile=theme.conf
-Email=fabio_r11@hotmail.com
-Theme-Id=aerial-sddm
+Theme-Id=aerial-cinematic-qt6
 Theme-API=2.0
-

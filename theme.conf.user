@@ -1,13 +1,16 @@
 [General]
-dayTimeStart=7
-dayTimeEnd=19
+autofocusInput=true
+background=snowfall-in-forest.1920x1080.mp4
 bgVidDay=playlists/day.m3u
 bgVidNight=playlists/night.m3u
+dayTimeEnd=19
+dayTimeStart=7
 displayFont="Misc Fixed"
 passwordLeftMargin=15
 relativePositionX=0.5
 relativePositionY=0.75
+showClock=true
 showLoginButton=false
-usernameLeftMargin=15
 showTopBar=true
-autofocusInput=true
+type=image
+usernameLeftMargin=15
