@@ -1,43 +1,38 @@
-# Aerial Cinematic SDDM (Qt6/Plasma 6 Fix)
+# Aerial Cinematic SDDM (Qt6/Plasma 6 Port)
 
-A modern, high-performance fork of the Aerial SDDM theme, fully rewritten for **Qt6** and **Plasma 6**. This version removes legacy Qt5 dependencies and introduces a cinematic "screensaver" mode.
+A minimalist, cinematic SDDM login theme designed specifically for KDE Neon Testing / Plasma 6. This theme features a high-definition video background that seamlessly transitions into a "Cinematic Mode"—fading out UI elements during inactivity to let the background video shine.
 
-##  Key Fixes & Features
-- **Qt6 Multimedia Migration**: Completely replaced outdated `VideoPlayer` logic with the new `QtMultimedia` standard.
-- **Cinematic Inactivity Timer**: After 10 seconds of inactivity (configurable), the login UI fades out and the background dimming is removed, revealing a crisp, unobstructed video.
-- **Hardware Compatibility**: Includes built-in virtual keyboard suppression specifically designed for laptops with touchscreens (like the ThinkPad T480s).
-- **Performance Optimized**: Uses simple opacity transitions rather than heavy blur shaders, ensuring smooth performance even on integrated graphics.
-- **Single File Video**: Simplified `theme.conf` to support a direct path to a single `.mp4` file instead of complex playlist files.
+## 🎥 Preview
+[Click to view the preview video](https://github.com/RussH/Aerial-Cinematic-Qt6/raw/main/screens/sddm_preview.mp4)
 
-##  Installation
-1. Clone this repository to your SDDM themes directory:
-   ```bash
-   git clone [https://github.com/russh/aerial-sddm-qt6.git](https://github.com/russh/aerial-sddm-qt6.git)
-   sudo cp -r aerial-sddm-qt6 /usr/share/sddm/themes/aerial-cinematic
+> **The Cinematic Effect:** After 10 seconds of inactivity, the clock, login fields, and session picker will automatically fade out, and the background dimming will lift to reveal the crystal-clear video. Simply move your mouse or start typing to bring the interface back.
 
-Updated README.md for your ForkMarkdown# Aerial Cinematic SDDM (Qt6 Port)
+---
 
-A high-performance, cinematic SDDM theme for **Plasma 6**, rewritten to support the modern **Qt6 Multimedia** stack. This is a modernized fork of the original Aerial theme by 3ximus, optimized for local high-definition video backgrounds and minimalist aesthetics.
+##  Features
+* **Qt6 & Plasma 6 Native**: Fully refactored to remove legacy Qt5 dependencies and versioned imports.
 
-##  Compatibility Warning
-**Tested On:** KDE Neon (Testing Edition) / Plasma 6. 
-This theme is written specifically for **Qt6**. It is NOT compatible with Plasma 5 or older distributions using Qt5.
 
-##  Key Enhancements
-- **Qt6 Native**: Completely removed legacy `qt5-graphicaleffects` and `phonon` dependencies.
-- **Cinematic Fade**: After 10 seconds of inactivity, the login UI and background dimming fade out completely, leaving a crystal-clear video view.
-- **ThinkPad Optimized**: Built-in suppression for virtual keyboards on touch-enabled laptops (like the T480s/T490).
-- **Single File Video**: Point the theme to a single `.mp4` file via `theme.conf`. No complex playlists required.
+---
 
-##  Dependencies
-To play video in SDDM on Plasma 6, you must have the Qt6 Multimedia plugins and GStreamer backends installed.
+## 🛠 Installation
 
-### For KDE Neon / Kubuntu 24.04+ / Debian Trixie:
+### 1. Clone the repository
 ```bash
-sudo apt install qml6-module-qtmultimedia qml6-module-qtquick-controls gstreamer1.0-libav gstreamer1.0-plugins-good
-For Arch Linux:Bashpacman -S qt6-multimedia gst-libav gst-plugins-good qt6-5compat
-For Fedora 40+:Bashsudo dnf install qt6-qtmultimedia gstreamer1-libav gstreamer1-plugins-good
- InstallationClone the repository:Bashgit clone [https://github.com/YOUR_USERNAME/aerial-sddm-qt6.git](https://github.com/YOUR_USERNAME/aerial-sddm-qt6.git)
-Move the folder to the SDDM themes directory:Bashsudo cp -r aerial-sddm-qt6 /usr/share/sddm/themes/aerial-cinematic
-Test the theme before applying:Bashsddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/aerial-cinematic
-🛠 Configuration (theme.conf)Unlike the original version, this theme uses a simplified theme.conf. Adjust these values to your liking:KeyDescriptionDefaultbackgroundVideoFull path to your .mp4 video/path/to/video.mp4fadeDurationTime in ms before UI fades out10000displayFontFont family for UIDroid Sans Mono for PowerlineclockFontSizeSize of the central clock84accentColorColor of the focus border#00d2ff
+git clone [https://github.com/RussH/Aerial-Cinematic-Qt6.git](https://github.com/RussH/Aerial-Cinematic-Qt6.git)
+cd Aerial-Cinematic-Qt6
+2. Move to SDDM themes directory
+You must install the theme folder into your system's SDDM directory:
+Bash
+sudo cp -r ../Aerial-Cinematic-Qt6 /usr/share/sddm/themes/aerial-cinematic-qt6
+3. Apply the theme
+Open System Settings.
+Navigate to Colors & Themes > Login Screen (SDDM).
+Select Aerial Cinematic Qt6 and click Apply. 
+
+#### Configuration
+You can customize the theme by editing the theme.conf file located in the theme directory: amend backgroundVideo to your .mp4 
+Default is video file snowfall-in-forest.mp4
+fadeDurationTime in ms before the UI fades out 10000
+accentColorBorder color for active field sessions#00d2ff
+showSessionSelect - Toggle the Wayland/X11 picker true
