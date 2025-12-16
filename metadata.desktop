@@ -1,13 +1,13 @@
 [SddmGreeterTheme]
 Name=Aerial Cinematic Qt6
 Description=Cinematic local video background with inactivity fade (Qt6 Port).
-Author=Russh (Original by Fabio Almeida)
+Author=Russh
 Copyright=(c) 2025, RussH
 License=GPL
 Type=sddm-theme
 Version=1.0
-Website=https://github.com/RussH/aerial-sddm-qt6
-Screenshot=screens/preview.gif
+Website=https://github.com/RussH/Aerial-Cinematic-Qt6
+Screenshot=screenshot.png
 MainScript=Main.qml
 ConfigFile=theme.conf
 Theme-Id=aerial-cinematic-qt6
