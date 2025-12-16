@@ -2,11 +2,11 @@
 Name=Aerial Cinematic Qt6
 Description=Cinematic local video background with inactivity fade (Qt6 Port).
 Author=Russh (Original by Fabio Almeida)
-Copyright=(c) 2024, Russh
+Copyright=(c) 2025, RussH
 License=GPL
 Type=sddm-theme
 Version=1.0
-Website=https://github.com/YOUR_USERNAME/aerial-sddm-qt6
+Website=https://github.com/RussH/aerial-sddm-qt6
 Screenshot=screens/preview.gif
 MainScript=Main.qml
 ConfigFile=theme.conf
