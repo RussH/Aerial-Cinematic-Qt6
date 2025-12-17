@@ -1,5 +1,6 @@
 [SddmGreeterTheme]
 Name=Aerial Cinematic Qt6
+QtVersion=6
 Description=Cinematic local video background with inactivity fade (Qt6 Port).
 Author=Russh
 Copyright=(c) 2025, RussH
